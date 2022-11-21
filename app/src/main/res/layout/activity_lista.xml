@@ -7,7 +7,7 @@
     tools:context=".lista">
 
     <TextView
-        android:id="@+id/lista_main_title"
+        android:id="@+id/cerradura_main_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -55,5 +55,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lista_main_title" />
+        app:layout_constraintTop_toBottomOf="@+id/cerradura_main_title" />
 </androidx.constraintlayout.widget.ConstraintLayout>
