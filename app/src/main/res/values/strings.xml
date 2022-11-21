@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FindMyKeys</string>
+    <string name="profile_image">profile_image</string>
+    <string name="login_profile_image">login_profile_image</string>
+    <string name="email">Email</string>
+    <string name="login_email_background">login_email_background</string>
+    <string name="clave">Clave</string>
+    <string name="login_password_background">login_password_background</string>
+    <string name="iniciar_sesion">Iniciar Sesion</string>
+    <string name="aun_no_tengo_una_cuenta">Aun no tengo una cuenta</string>
+    <string name="mis_cerraduras">Mis Cerraduras</string>
+    <string name="lista_back_button">lista_back_button</string>
+    <string name="lista_profile_button">lista_profile_button</string>
+</resources>
