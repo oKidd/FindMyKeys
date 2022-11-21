@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">FindMyKeys</string>
-    <string name="profile_image">profile_image</string>
     <string name="login_profile_image">login_profile_image</string>
     <string name="email">Email</string>
     <string name="login_email_background">login_email_background</string>

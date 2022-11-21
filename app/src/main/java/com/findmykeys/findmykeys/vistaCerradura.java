@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class cerradura extends AppCompatActivity {
+public class vistaCerradura extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cerradura);
+        setContentView(R.layout.activity_vista_cerradura);
     }
 }
