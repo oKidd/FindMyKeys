@@ -7,19 +7,20 @@
     tools:context=".lista">
 
     <TextView
-        android:id="@+id/tvNombreCerraduraVista"
+        android:id="@+id/config_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/quicksand"
         android:text="@string/mis_cerraduras"
+        android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/lista_back_button"
+        android:id="@+id/config_back_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
@@ -48,13 +49,24 @@
 
     <ListView
         android:id="@+id/lvCerradura"
-        android:layout_width="399dp"
-        android:layout_height="803dp"
+        android:layout_width="400dp"
+        android:layout_height="795dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNombreCerraduraVista" />
+        app:layout_constraintTop_toBottomOf="@+id/config_title" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="390dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="28dp"
+        android:background="#DDDDDD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/config_title" />
 </androidx.constraintlayout.widget.ConstraintLayout>
