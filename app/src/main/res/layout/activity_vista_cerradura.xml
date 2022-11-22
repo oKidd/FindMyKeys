@@ -8,11 +8,13 @@
 
     <TextView
         android:id="@+id/tvNombreCerraduraVista"
-        android:layout_width="170dp"
+        android:layout_width="250dp"
         android:layout_height="73dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/quicksand"
-        android:text="Cerradura"
+        android:text="@string/cerradura_info"
+        android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,31 +50,52 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="217dp"
-        android:layout_height="216dp"
-        android:layout_marginStart="102dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="92dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="200dp"
         android:layout_marginBottom="387dp"
+        android:contentDescription="@string/cerradura_icon"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.315"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@drawable/lock_2" />
 
     <TextView
         android:id="@+id/tvEstadoCerraduraVista"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
         android:layout_marginStart="108dp"
-        android:layout_marginTop="407dp"
+        android:layout_marginTop="588dp"
         android:layout_marginEnd="98dp"
-        android:layout_marginBottom="284dp"
-        android:text="Estado: Abierta"
+        android:fontFamily="@font/quicksand_light"
+        android:text="@string/estado_cerradura"
+        android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/quicksand"
+        android:scaleX="3"
+        android:scaleY="3"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEstadoCerraduraVista" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

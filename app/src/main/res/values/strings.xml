@@ -14,4 +14,7 @@
     <string name="estado_cerrada">Estado: Cerrada</string>
     <string name="lista_image">lista_image</string>
     <string name="lista_icon">lista_icon</string>
+    <string name="estado_cerradura">Estado: Cerrada</string>
+    <string name="cerradura_info">Cerradura Info</string>
+    <string name="cerradura_icon">cerradura_icon</string>
 </resources>
