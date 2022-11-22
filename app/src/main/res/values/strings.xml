@@ -17,4 +17,9 @@
     <string name="estado_cerradura">Estado: Cerrada</string>
     <string name="cerradura_info">Cerradura Info</string>
     <string name="cerradura_icon">cerradura_icon</string>
+    <string name="ajustes_cerradura">Ajustes Cerradura</string>
+    <string name="historial_de_uso">Historial de Uso</string>
+    <string name="ajustes_de_privacidad">Ajustes de Privacidad</string>
+    <string name="lista_de_miembros">Lista de Miembros</string>
+    <string name="eliminar_cerradura">Eliminar Cerradura</string>
 </resources>

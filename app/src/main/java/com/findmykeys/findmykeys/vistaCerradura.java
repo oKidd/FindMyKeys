@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class vistaCerradura extends AppCompatActivity {
@@ -12,7 +13,7 @@ public class vistaCerradura extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vista_cerradura);
-        TextView tvNombreCerraduraVista = findViewById(R.id.tvNombreCerraduraVista);
+        TextView tvNombreCerraduraVista = findViewById(R.id.config_title);
         TextView tvEstadoCerraduraVista = findViewById(R.id.tvEstadoCerraduraVista);
 
         Intent intent = getIntent();

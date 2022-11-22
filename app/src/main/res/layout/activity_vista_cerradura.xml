@@ -7,7 +7,7 @@
     tools:context=".vistaCerradura">
 
     <TextView
-        android:id="@+id/tvNombreCerraduraVista"
+        android:id="@+id/config_title"
         android:layout_width="250dp"
         android:layout_height="73dp"
         android:layout_marginTop="24dp"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/lista_back_button"
+        android:id="@+id/config_back_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
@@ -91,7 +91,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNombreCerraduraVista"
+        app:layout_constraintTop_toBottomOf="@+id/config_title"
         app:srcCompat="@drawable/lock_2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
