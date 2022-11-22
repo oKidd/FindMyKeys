@@ -5,18 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
 
 public class vistaCerradura extends AppCompatActivity {
     private int cerraduraId;
+    private Switch switchCerradura;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vista_cerradura);
         TextView tvNombreCerraduraVista = findViewById(R.id.tvNombreCerraduraVista);
         TextView tvEstadoCerraduraVista = findViewById(R.id.tvEstadoCerraduraVista);
-        Switch switchCerradura = findViewById(R.id.switchCerradura);
+        switchCerradura = findViewById(R.id.switchCerradura);
         Intent intent = getIntent();
 
         // Accessing the data using key and value
@@ -37,7 +39,20 @@ public class vistaCerradura extends AppCompatActivity {
             }
 
         }
+
+        switchCerradura.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    CerraduraController.getListaCerradura().get(cerraduraId).setEstado(true);
+                    tvEstadoCerraduraVista.setText("Estado: Abierto");
+                } else {
+                    CerraduraController.getListaCerradura().get(cerraduraId).setEstado(false);
+                    tvEstadoCerraduraVista.setText("Estado: Cerrado");
+                }
+            }
+        });
     }
+
 
     public void btnAtras(View v){
         Intent ilistaCerraduras = new Intent(this, lista.class);
