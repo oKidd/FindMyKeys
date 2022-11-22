@@ -13,17 +13,18 @@ public class vistaCerradura extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vista_cerradura);
-        TextView tvNombreCerraduraVista = findViewById(R.id.config_title);
+        TextView tvNombreCerraduraVista = findViewById(R.id.tvNombreCerraduraVista);
         TextView tvEstadoCerraduraVista = findViewById(R.id.tvEstadoCerraduraVista);
 
         Intent intent = getIntent();
 
         // Accessing the data using key and value
-        cerraduraId = intent.getIntExtra("noteId", -1);
+        cerraduraId = intent.getIntExtra("CerraduraId", -1);
 
         if (cerraduraId != -1) {
 
             tvNombreCerraduraVista.setText(CerraduraController.getListaCerradura().get(cerraduraId).getNombreCerradura());
+
             boolean estado = CerraduraController.getListaCerradura().get(cerraduraId).isEstado();
             if (estado){
                 tvEstadoCerraduraVista.setText("Estado: Abierto");

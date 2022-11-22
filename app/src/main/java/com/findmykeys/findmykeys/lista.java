@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class lista extends AppCompatActivity {
 
@@ -22,7 +23,7 @@ public class lista extends AppCompatActivity {
         if (CerraduraController.getListaCerradura().size() < 1) {
 
             CerraduraController.addCerradura(101,"Cerradura Casa",false);
-            CerraduraController.addCerradura(102,"Cerradura Oficina",false);
+            CerraduraController.addCerradura(102,"Cerradura Oficina",true);
 
         }
         lvCerradura.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -31,6 +32,7 @@ public class lista extends AppCompatActivity {
 
                 Intent iVistaCerradura = new Intent(getApplicationContext(), vistaCerradura.class);
                 iVistaCerradura.putExtra("CerraduraId", i);
+                //Toast.makeText(lista.this, "id: "+ i + ", nombre: " + CerraduraController.getListaCerradura().get(i).getNombreCerradura(), Toast.LENGTH_SHORT).show();
                 startActivity(iVistaCerradura);
             }
         });
