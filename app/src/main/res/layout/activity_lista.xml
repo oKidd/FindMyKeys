@@ -48,13 +48,24 @@
 
     <ListView
         android:id="@+id/lvCerradura"
-        android:layout_width="399dp"
-        android:layout_height="803dp"
+        android:layout_width="400dp"
+        android:layout_height="795dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombreCerraduraVista" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="390dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="28dp"
+        android:background="#DDDDDD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNombreCerraduraVista" />
 </androidx.constraintlayout.widget.ConstraintLayout>
