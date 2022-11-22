@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "690030073266",
+    "project_id": "findmykeys-dc6b7",
+    "storage_bucket": "findmykeys-dc6b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690030073266:android:baf2146ff0ede0c3f080ab",
+        "android_client_info": {
+          "package_name": "com.findmykeys.findmykeys"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690030073266-6kghj1tvbc2bljra8un38rvfvqtaav1b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.findmykeys.findmykeys",
+            "certificate_hash": "b008f9f10cba4b1b3e62b5dda55903d900bcc5d8"
+          }
+        },
+        {
+          "client_id": "690030073266-0umjlkr2i6j74l7nm4pqjaiv71rkh76n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF-nZ1R9aQPbdmpEgkAgbCh6ABgSO6470"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690030073266-0umjlkr2i6j74l7nm4pqjaiv71rkh76n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
