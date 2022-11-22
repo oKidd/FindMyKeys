@@ -48,23 +48,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/settings" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginBottom="387dp"
-        android:contentDescription="@string/cerradura_icon"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.315"
-        tools:ignore="ImageContrastCheck"
-        tools:srcCompat="@drawable/lock_2" />
-
     <TextView
         android:id="@+id/tvEstadoCerraduraVista"
         android:layout_width="150dp"
@@ -96,5 +79,19 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvEstadoCerraduraVista" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tvEstadoCerraduraVista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombreCerraduraVista"
+        app:srcCompat="@drawable/lock_2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
