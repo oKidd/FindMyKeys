@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Switch;
 import android.widget.TextView;
 
 public class vistaCerradura extends AppCompatActivity {
@@ -15,7 +16,7 @@ public class vistaCerradura extends AppCompatActivity {
         setContentView(R.layout.activity_vista_cerradura);
         TextView tvNombreCerraduraVista = findViewById(R.id.tvNombreCerraduraVista);
         TextView tvEstadoCerraduraVista = findViewById(R.id.tvEstadoCerraduraVista);
-
+        Switch switchCerradura = findViewById(R.id.switchCerradura);
         Intent intent = getIntent();
 
         // Accessing the data using key and value
@@ -28,8 +29,11 @@ public class vistaCerradura extends AppCompatActivity {
             boolean estado = CerraduraController.getListaCerradura().get(cerraduraId).isEstado();
             if (estado){
                 tvEstadoCerraduraVista.setText("Estado: Abierto");
+                switchCerradura.setChecked(true);
+
             } else {
                 tvEstadoCerraduraVista.setText("Estado: Cerrado");
+                switchCerradura.setChecked(false);
             }
 
         }
