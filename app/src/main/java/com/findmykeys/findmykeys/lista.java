@@ -32,8 +32,17 @@ public class lista extends AppCompatActivity {
                 Intent iVistaCerradura = new Intent(getApplicationContext(), vistaCerradura.class);
                 iVistaCerradura.putExtra("CerraduraId", i);
                 startActivity(iVistaCerradura);
-
             }
         });
+    }
+
+    public void irAConfig(View v){
+        Intent iconfig = new Intent(this, ConfigCerradura.class);
+        startActivity(iconfig);
+    }
+
+    public void salir(View v){
+        Intent iInicioSesion = new Intent(this, MainActivity.class);
+        startActivity(iInicioSesion);
     }
 }
