@@ -55,7 +55,9 @@ public class vistaCerradura extends AppCompatActivity {
 
 
     public void btnAtras(View v){
-        finish();
+
+        Intent ilista = new Intent(this, lista.class);
+        startActivity(ilista);
     }
 
     public void irAConfig(View v){
