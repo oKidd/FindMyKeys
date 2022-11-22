@@ -39,12 +39,10 @@ public class lista extends AppCompatActivity {
     }
 
     public void irAConfig(View v){
-        Intent iconfig = new Intent(this, ConfigCerradura.class);
-        startActivity(iconfig);
+        finish();
     }
 
     public void salir(View v){
-        Intent iInicioSesion = new Intent(this, MainActivity.class);
-        startActivity(iInicioSesion);
+        finish();
     }
 }

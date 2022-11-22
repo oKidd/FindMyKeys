@@ -7,7 +7,7 @@
     tools:context=".ConfigCerradura">
 
     <TextView
-        android:id="@+id/config_title"
+        android:id="@+id/tvNombreCerraduraVista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -43,7 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/config_title" />
+        app:layout_constraintTop_toBottomOf="@+id/tvNombreCerraduraVista" />
 
     <View
         android:id="@+id/divider"
@@ -83,7 +83,7 @@
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#00432929"
         android:fontFamily="@font/quicksand_light"
@@ -99,7 +99,7 @@
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#00432929"
         android:fontFamily="@font/quicksand_light"
@@ -115,7 +115,7 @@
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#00432929"
         android:fontFamily="@font/quicksand_light"
@@ -131,7 +131,7 @@
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#00432929"
         android:fontFamily="@font/quicksand_light"

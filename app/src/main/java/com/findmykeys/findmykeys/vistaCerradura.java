@@ -40,8 +40,7 @@ public class vistaCerradura extends AppCompatActivity {
     }
 
     public void btnAtras(View v){
-        Intent ilistaCerraduras = new Intent(this, lista.class);
-        startActivity(ilistaCerraduras);
+        finish();
     }
 
     public void irAConfig(View v){

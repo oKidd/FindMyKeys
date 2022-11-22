@@ -15,7 +15,6 @@ public class ConfigCerradura extends AppCompatActivity {
     }
 
     public void btnAtras(View v){
-        Intent ilistaCerraduras = new Intent(this, lista.class);
-        startActivity(ilistaCerraduras);
+        finish();
     }
 }
