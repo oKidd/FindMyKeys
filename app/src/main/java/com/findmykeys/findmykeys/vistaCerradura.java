@@ -21,7 +21,6 @@ public class vistaCerradura extends AppCompatActivity {
         switchCerradura = findViewById(R.id.switchCerradura);
         Intent intent = getIntent();
 
-        // Accessing the data using key and value
         cerraduraId = intent.getIntExtra("CerraduraId", -1);
 
         if (cerraduraId != -1) {
@@ -55,7 +54,6 @@ public class vistaCerradura extends AppCompatActivity {
 
 
     public void btnAtras(View v){
-
         Intent ilista = new Intent(this, lista.class);
         startActivity(ilista);
     }
