@@ -10,4 +10,7 @@
     <string name="mis_cerraduras">Mis Cerraduras</string>
     <string name="lista_back_button">lista_back_button</string>
     <string name="lista_profile_button">lista_profile_button</string>
+    <string name="nombre_cerradura">Nombre Cerradura</string>
+    <string name="estado_cerrada">Estado: Cerrada</string>
+    <string name="lista_image">lista_image</string>
 </resources>
