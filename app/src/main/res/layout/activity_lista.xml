@@ -7,7 +7,7 @@
     tools:context=".lista">
 
     <TextView
-        android:id="@+id/cerradura_main_title"
+        android:id="@+id/tvNombreCerraduraVista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -47,6 +47,7 @@
         app:srcCompat="@drawable/user_male_circle" />
 
     <ListView
+        android:id="@+id/lvCerradura"
         android:layout_width="399dp"
         android:layout_height="803dp"
         android:layout_marginStart="1dp"
@@ -55,5 +56,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cerradura_main_title" />
+        app:layout_constraintTop_toBottomOf="@+id/tvNombreCerraduraVista" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,9 +7,9 @@
     tools:context=".vistaCerradura">
 
     <TextView
-        android:id="@+id/cerradura_main_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/tvNombreCerraduraVista"
+        android:layout_width="170dp"
+        android:layout_height="73dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/quicksand"
         android:text="Cerradura"
@@ -46,14 +46,33 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/settings" />
 
-    <ListView
-        android:layout_width="399dp"
-        android:layout_height="803dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="1dp"
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="217dp"
+        android:layout_height="216dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="387dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cerradura_main_title" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvEstadoCerraduraVista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="407dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="284dp"
+        android:text="Estado: Abierta"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
